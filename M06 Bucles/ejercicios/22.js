@@ -6,7 +6,7 @@ function diasEnMes(mes) {
   let dias = 0;
   do {
     if (mes < 1 || mes > 12) {
-      return 'Mes inválido';
+      return 0;
     }
   } while (mes < 1 || mes > 12);
   switch (mes) {
@@ -29,7 +29,7 @@ function diasEnMes(mes) {
       dias = 28;
       break;
     default:
-      return 'Mes inválido';
+      return 0;
   }
   return dias;
 }
