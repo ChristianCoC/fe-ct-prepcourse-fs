@@ -4,7 +4,7 @@ describe("obtenerPrimerStringLargo", () => {
   it("should return the first string with more than 5 characters", () => {
     expect(
       obtenerPrimerStringLargo(["hello", "world", "this", "is", "a", "test"])
-    ).toBe("hello");
+    ).toBeUndefined(); // Modificado porque la consigna dice que debe retornar mas de 5 caracteres.
     expect(
       obtenerPrimerStringLargo([
         "this",
