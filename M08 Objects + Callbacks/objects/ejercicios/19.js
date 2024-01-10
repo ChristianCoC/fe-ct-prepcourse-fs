@@ -4,6 +4,7 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
   // Define esta propiedad de todos los usuarios como true.
   // Retornar el arreglo.
   // Tu código:
+  return objetoMuchosUsuarios.map((usuario) => ({ ...usuario, esPremium: true }));
 }
 
 module.exports = pasarUsuarioAPremium;
